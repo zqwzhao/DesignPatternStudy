@@ -1,4 +1,4 @@
-package singleton.action;
+package singleton.action.idgenerate.v1;
 
 import java.util.concurrent.atomic.AtomicLong;
 
