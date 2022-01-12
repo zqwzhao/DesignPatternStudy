@@ -1,5 +1,6 @@
 package singleton.action.idgenerate.v1;
 
+import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -10,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @createTime : [2021-12-16 11:12]
  */
 public class IdGenerator3 {
-    private AtomicInteger id = new AtomicInteger(0);
+    private AtomicInteger id = new AtomicInteger(10000);
 
     private static final ConcurrentHashMap<Long,IdGenerator3> instances = new ConcurrentHashMap<>();
 
@@ -23,6 +24,14 @@ public class IdGenerator3 {
     }
 
     public long getId() {
-       return id.incrementAndGet();
+       return id.getAndAdd(new Random().nextInt(10));
+    }
+
+    public static void main(String[] args) {
+        IdGenerator3 idGenerator3 = IdGenerator3.getInstance();
+        for (int i = 0; i < 100; i++) {
+
+            System.out.println(idGenerator3.getId());
+        }
     }
 }

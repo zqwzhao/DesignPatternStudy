@@ -15,8 +15,8 @@ import java.util.Random;
  * 6. 对 IdGenerator 类重命名，并且抽象出对应的接口。
  *
  */
-public class RandomIdGenerator implements IdGenerator{
-
+public class RandomIdGenerator implements LogTraceIdGenerator{
+    //private static final Logger logger = LoggerFactory.getLogger(RandomIdGenerator.class);
     @Override
     public String generate() {
         String substrOfHostName = getLastfieldOfHostName( );

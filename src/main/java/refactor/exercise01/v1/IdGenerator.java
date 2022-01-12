@@ -49,8 +49,9 @@ public class IdGenerator {
         return id;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnknownHostException {
         String generate = IdGenerator.generate();
         System.out.println(generate);
+        System.out.println(InetAddress.getLocalHost().getHostName());
     }
 }
