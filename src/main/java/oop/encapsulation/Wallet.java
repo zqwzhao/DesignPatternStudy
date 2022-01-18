@@ -4,7 +4,10 @@ package oop.encapsulation;
 import singleton.action.idgenerate.v1.IdGenerator;
 
 import java.math.BigDecimal;
-
+/**
+ * @author: zhaoqw
+ * @date: 2022/1/16 09:11
+ */
 public class Wallet {
   private String id;
   private long createTime;

@@ -1,5 +1,8 @@
 package oop.abstraction;
-
+/**
+ * @author: zhaoqw
+ * @date: 2022/1/18 09:11
+ */
 public interface IPictureStorage {
   /*void savePicture(Picture picture);
   Image getPicture(String pictureId);
