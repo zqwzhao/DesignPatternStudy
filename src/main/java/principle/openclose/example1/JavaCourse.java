@@ -1,11 +1,13 @@
-package principle.openclose;
+package principle.openclose.example1;
+
+import principle.openclose.example1.ICourse;
 
 /**
  * @author : [zqwzh]
  * @version : [v1.0]
  * @createTime : [2021-12-17 22:53]
  */
-public class JavaCourse implements ICourse{
+public class JavaCourse implements ICourse {
     private Integer id;
     private String name;
     private Double price;

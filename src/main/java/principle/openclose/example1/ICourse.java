@@ -1,4 +1,4 @@
-package principle.openclose;
+package principle.openclose.example1;
 
 /**
  * @author : [zqwzh]
