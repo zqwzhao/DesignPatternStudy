@@ -24,6 +24,7 @@ public class IdGenerator {
     public long generate() {
         return id.getAndAdd(new Random().nextInt(10));
     }
+
     public static void main(String[] args) {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(4,8,5, TimeUnit.SECONDS,
                 new ArrayBlockingQueue<>(10),new ThreadPoolExecutor.DiscardOldestPolicy());

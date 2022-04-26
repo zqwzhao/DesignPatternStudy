@@ -22,6 +22,6 @@ public class Singleton01 {
     }
 
     public void method() {
-        //.....    }
+        //业务逻辑.....
     }
 }

@@ -58,9 +58,5 @@ public class ConstructorArg {
         .setArg(String.class)
         .setType("aaaa".getClass())
         .build();
-
-
-
   }
-
 }

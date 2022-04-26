@@ -1,7 +1,7 @@
 package oop.encapsulation;
 
 
-import singleton.action.idgenerate.v1.IdGenerator;
+import creational.singleton.action.idgenerate.v1.IdGenerator;
 
 import java.math.BigDecimal;
 /**
