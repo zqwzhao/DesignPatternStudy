@@ -1,7 +1,5 @@
 package top.zhaoqw.study.refactor.exercise01.v3;
 
-import com.google.common.annotations.VisibleForTesting;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -63,8 +61,7 @@ public class RandomIdGenerator implements LogTraceIdGenerator {
      * @param hostName
      * @return
      */
-    @VisibleForTesting
-    protected String getLastSubstrSplittedByDot(String hostName) {
+    public String getLastSubstrSplittedByDot(String hostName) {
         //如果需求经常变化，命名为getLastSubstrByDelimiter
 
         String[] tokens = hostName.split("\\.");
@@ -77,8 +74,7 @@ public class RandomIdGenerator implements LogTraceIdGenerator {
      * @param length 随机id的长度
      * @return 随机id
      */
-    @VisibleForTesting
-    protected String generateRandomAlphameric(int length) {
+    public String generateRandomAlphameric(int length) {
         char[] randomChars = new char[length];
         int count = 0;
         Random random = new Random();

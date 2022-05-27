@@ -1,6 +1,7 @@
 package top.zhaoqw.study.creational.simplefactory.action2.v2.store.impl;
 
-import creational.simplefactory.action2.v2.store.ICommodity;
+
+import top.zhaoqw.study.creational.simplefactory.action2.v2.store.ICommodity;
 
 import java.util.Map;
 

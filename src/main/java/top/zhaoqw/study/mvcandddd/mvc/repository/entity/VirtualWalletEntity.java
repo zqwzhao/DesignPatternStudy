@@ -1,6 +1,6 @@
 package top.zhaoqw.study.mvcandddd.mvc.repository.entity;
 
-import mvcandddd.mvc.common.TransactionType;
+import top.zhaoqw.study.mvcandddd.mvc.common.TransactionType;
 
 import java.math.BigDecimal;
 

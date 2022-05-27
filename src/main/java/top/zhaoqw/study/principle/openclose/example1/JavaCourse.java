@@ -1,6 +1,5 @@
 package top.zhaoqw.study.principle.openclose.example1;
 
-import principle.openclose.example1.ICourse;
 
 /**
  * @author : [zqwzh]

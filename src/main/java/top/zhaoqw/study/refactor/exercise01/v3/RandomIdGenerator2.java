@@ -1,7 +1,5 @@
 package top.zhaoqw.study.refactor.exercise01.v3;
 
-import com.google.common.annotations.VisibleForTesting;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -39,7 +37,6 @@ public class RandomIdGenerator2 implements IdGenerator {
         return substrOfHostName;
     }
 
-    @VisibleForTesting
     protected String getLastSubstrSplittedByDot(String hostName) {
         if (hostName == null || hostName.isEmpty()) {
             throw new IllegalArgumentException("...");
@@ -55,7 +52,6 @@ public class RandomIdGenerator2 implements IdGenerator {
      * @param length
      * @return
      */
-    @VisibleForTesting
     protected String generateRandomAlphameric(int length) {
         if (length <= 0) {
             throw new IllegalArgumentException("length 不能小于等于0");

@@ -1,8 +1,8 @@
 package top.zhaoqw.study.structural.adapter.action.example3.extention;
 
 
-import structural.adapter.action.example3.Demo;
-import structural.adapter.action.example3.IA;
+import top.zhaoqw.study.structural.adapter.action.example3.Demo;
+import top.zhaoqw.study.structural.adapter.action.example3.IA;
 
 // 将外部系统A替换成外部系统B
 public class BAdaptor implements IA {

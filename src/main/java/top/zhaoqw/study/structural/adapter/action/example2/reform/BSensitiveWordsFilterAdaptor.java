@@ -1,6 +1,6 @@
 package top.zhaoqw.study.structural.adapter.action.example2.reform;
 
-import structural.adapter.action.example2.BSensitiveWordsFilter;
+import top.zhaoqw.study.structural.adapter.action.example2.BSensitiveWordsFilter;
 
 /**
  * @author: zhaoqw

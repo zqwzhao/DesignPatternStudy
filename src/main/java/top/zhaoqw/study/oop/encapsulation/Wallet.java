@@ -1,7 +1,7 @@
 package top.zhaoqw.study.oop.encapsulation;
 
 
-import creational.singleton.action.idgenerate.v1.IdGenerator;
+import top.zhaoqw.study.creational.singleton.action.idgenerate.v1.IdGenerator;
 
 import java.math.BigDecimal;
 /**
