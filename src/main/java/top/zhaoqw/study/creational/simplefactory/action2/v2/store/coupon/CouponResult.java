@@ -1,6 +1,8 @@
 package top.zhaoqw.study.creational.simplefactory.action2.v2.store.coupon;
 
 /**
+ * 发奖结果
+ *
  * @author zhaoqw
  * @date 2022/05/27
  */

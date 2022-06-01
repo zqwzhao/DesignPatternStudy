@@ -28,7 +28,7 @@ public class CouponCommodityService implements ICommodity {
    * @param commodityId 奖品id
    * @param bizId       业务id
    * @param extMap      扩展字段
-   * @throws Exception
+   * @throws Exception 异常信息
    */
   @Override
   public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
