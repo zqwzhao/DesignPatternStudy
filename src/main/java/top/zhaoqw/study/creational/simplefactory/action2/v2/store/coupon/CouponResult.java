@@ -34,4 +34,8 @@ public class CouponResult {
   public void setMessage(String message) {
     this.message = message;
   }
+
+  public String getInfo() {
+    return this.message;
+  }
 }
