@@ -5,6 +5,9 @@ import top.zhaoqw.study.creational.abstractfactory.action.v1.CacheService;
 import top.zhaoqw.study.creational.abstractfactory.action.v1.impl.CacheServiceImpl;
 import top.zhaoqw.study.creational.simplefactory.action2.v2.store.ICommodity;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -44,6 +47,13 @@ public class StoreFactoryTest {
     String zhaoqw1 = cacheService.get("zhaoqw", 2);
     System.out.println(zhaoqw);
     System.out.println(zhaoqw1);
+  }
 
+  @Test
+  public void testLocalDate() {
+    LocalDate now = LocalDate.now();
+    LocalDate minus = now.minus(6, ChronoUnit.MONTHS);
+    String format = minus.format(DateTimeFormatter.ofPattern("YYYY-MM"));
+    System.out.println(format);
   }
 }

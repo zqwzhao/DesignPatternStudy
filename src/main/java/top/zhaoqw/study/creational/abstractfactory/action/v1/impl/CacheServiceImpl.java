@@ -43,7 +43,7 @@ public class CacheServiceImpl implements CacheService {
     if (1 == redisType) {
       egm.setEx(key, value, timeout, timeUnit);
     }
-    if (1 == redisType) {
+    if (2 == redisType) {
       iir.setExpire(key, value, timeout, timeUnit);
     }
     redisUtils.set(key, value, timeout, timeUnit);
@@ -54,7 +54,7 @@ public class CacheServiceImpl implements CacheService {
     if (1 == redisType) {
       egm.delete(key);
     }
-    if (1 == redisType) {
+    if (2 == redisType) {
       iir.del(key);
     }
     redisUtils.del(key);
