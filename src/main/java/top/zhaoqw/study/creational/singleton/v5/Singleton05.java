@@ -1,6 +1,7 @@
 package top.zhaoqw.study.creational.singleton.v5;
 
 /**
+ *  保证一个类只有一个对象实例
  *
  *   双重检查单例模式
  *   要不要加volatile，答案是要加，至少现在版本要加，因为大多数用的Java8

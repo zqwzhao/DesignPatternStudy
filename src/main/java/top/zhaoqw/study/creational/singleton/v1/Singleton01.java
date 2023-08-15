@@ -17,7 +17,8 @@ public class Singleton01 {
 
     private static Singleton01 INSTANCE = new Singleton01();
 
-    public Singleton01 getIstance() {
+
+    public static Singleton01 getIstance() {
         return INSTANCE;
     }
 
