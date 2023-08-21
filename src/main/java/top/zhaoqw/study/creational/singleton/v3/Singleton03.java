@@ -13,10 +13,10 @@ public class Singleton03 {
     private Singleton03 (){}
 
     public static Singleton03 getInstance() {
-    if ( INSTANCE == null) {
-        INSTANCE = new Singleton03();
-    }
-    return  INSTANCE;
+        if ( INSTANCE == null) {
+            INSTANCE = new Singleton03();
+        }
+        return  INSTANCE;
     }
 
     public static void main(String[] args) {
